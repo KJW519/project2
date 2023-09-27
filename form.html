@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h2>HTML Forms</h2>
+    <h2>Input your information</h2>
 
     <form action="/action_page.php">
       <label for="fname">First name:</label><br />
@@ -21,22 +21,25 @@
         value=""
       /><br />
       <br />
-      Freshman<input type="checkbox" id="freshman" name="freshman" value="" />
-      <select id="girl" name="girl">
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-      </select>
+      Are you Freshman?
+      <input type="checkbox" id="freshman" name="freshman" value="" /><br />
+      <br />
 
-      <input type="date" id="girl" name="girl" value="" />
-      <textarea id="girl" name="girl"></textarea>
+      What is your major?
+      <select id="major" name="major">
+        <option value="Computer Science">Computer Science</option>
+        <option value="Design">Design</option>
+        <option value="Machine">Machine</option>
+      </select>
+      <br /><br />
+      Input Birthday <input type="date" id="birth" name="birth" value="" />
+      <br /><br />
+      Write down one of your strengths
+      <textarea id="strength" name="strength"></textarea>
 
       <input type="submit" value="Submit" />
     </form>
 
-    <p>
-      If you click the "Submit" button, the form-data will be sent to a page
-      called "/action_page.php".
-    </p>
+    <p>click "Submit" when you are ready.</p>
   </body>
 </html>
